@@ -39,6 +39,7 @@ jobs:
 
   # This workflow contains a single job called "build"
   arroz-basmati:
+    environment: Teste
     needs: build
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
@@ -52,4 +53,4 @@ jobs:
         run: |
           sudo apt update
           sudo apt -y install postgresql-client
-          PGPASSWORD=Abcd1234! psql -U postgres -h database-ea.cvkei0o2ei4o.eu-central-1.rds.amazonaws.com -d db-ea -i tabela.sql
+          PGPASSWORD=${{ }} psql -U ${{ }} -h database-ea.cvkei0o2ei4o.eu-central-1.rds.amazonaws.com -d db-ea -i tabela.sql
