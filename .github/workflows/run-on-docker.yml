@@ -20,7 +20,7 @@ jobs:
         NODE_ENV: development
         POSTGRES_PASSWORD: Abcd1234
       ports:
-        - 5432
+        - 5432:5432
       volumes:
         - dados:/mnt
       options: --cpus 1
@@ -30,7 +30,6 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run a one-line script inside the container
         run: |
-          tree /etc/postgresql
           su - postgres
           psql -l
 
