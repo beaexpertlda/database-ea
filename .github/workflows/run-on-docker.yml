@@ -30,7 +30,7 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run a one-line script inside the container
         run: |
-          cat /etc/postgresql/16/main/pg_hba.conf
+          tree /etc/postgresql
           su - postgres
           psql -l
 
