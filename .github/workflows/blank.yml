@@ -36,6 +36,7 @@ on:
       ambiente:
         description: 'Qual o ambiente de trabalho'   
         required: true
+        type: environment
 
   
 
