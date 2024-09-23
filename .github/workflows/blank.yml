@@ -21,8 +21,22 @@ on:
         options:
           - aws
           - azure
-          - ggogle
+          - google
           - oracle
+      descricao:
+        description: 'Descricao'   
+        required: true
+        type: string
+
+      logico:
+        description: 'Sim ou Nao - hhfhfh'   
+        required: true
+        type: boolean
+
+      ambiente:
+        description: 'Qual o ambiente de trabalho'   
+        required: true
+
   
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
